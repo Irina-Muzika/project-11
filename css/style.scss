@@ -1,0 +1,88 @@
+.bg, html{
+    background-color: rgb(38, 34, 34);
+    width: 100%;
+    height:100%;
+    margin:0;
+}
+
+
+.zero{
+height: 200px;
+    font-size: 90px;
+    color: whitesmoke;
+text-align: end;
+   
+}
+
+
+.grid * {
+    background-color:rgb(23, 21, 21);
+    display: grid;
+    border: 1px solid grey;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    align-items: center;
+ 
+}
+.grid{
+    display: grid;
+    grid-template-columns: minmax(100px, 500px) minmax(100px, 500px) minmax(100px, 500px) minmax(100px, 500px) minmax(100px, 500px);
+    grid-template-rows:repeat(7,50px )  ;
+ 
+}
+.grid-p{
+    display: flex;
+    gap: 40px;
+  
+    color: white;
+    height: 50px;
+padding-left: 20px;
+justify-content: start;
+border-top: none;
+}
+.grid-mc{
+    display: flex;
+    gap: 40px;
+   justify-content: space-between;
+    color: white;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: start;
+    border-top: 0;
+}
+.mc-color{
+    color: gray;
+}
+.grid-function{
+    background-color: rgb(29, 29, 29);
+    display: flex;
+    justify-content: start;
+    gap: 40px;
+    padding-left: 20px;
+    text-align: center;
+    align-items: center;
+    color: whitesmoke;
+    height: 50px;
+}
+.bgb{
+    background-color:black;
+}
+.Trigonometry-p::before{
+    content: "";
+border-bottom: 20px solid whitesmoke;
+border-left: 20px solid transparent;
+color: white;
+text-align: center;
+display: inline-block;
+margin-right: 10px;
+}
+.Function-p::before{
+content: "ƒ";
+margin-right: 10px;
+font-size: 30px;
+}
+.bgg{
+    background-color: rgb(50, 48, 48);
+}
