@@ -201,7 +201,8 @@ li a {
 }
 
 li:hover {
-  border-bottom: 1px dotted yellow;
+  border-bottom: 1px dotted yellowgreen;
+  text-align: center;
   cursor: pointer;
 }
 
@@ -227,4 +228,5 @@ ul li ul:hover {
 ul li ul li {
   clear: both;
   width: 100%;
+  border: 1px dotted yellowgreen;
 }/*# sourceMappingURL=style.css.map */

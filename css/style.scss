@@ -193,7 +193,8 @@ text-align: center;
   }
   
   li:hover {
-  border-bottom: 1px dotted yellow;
+  border-bottom: 1px dotted yellowgreen;
+  text-align: center;
     cursor: pointer;
    
   }
@@ -216,11 +217,14 @@ align-items: center;
     visibility: visible;
     opacity: 1;
     display: block;
+  
   }
   
   ul li ul li {
     clear: both;
     width: 100%;
+    border: 1px dotted yellowgreen;
+   
   }
   
   
