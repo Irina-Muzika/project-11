@@ -6,17 +6,35 @@
   margin: 0;
 }
 
+.f-s {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
 .zero {
-  height: 200px;
-  font-size: 90px;
+  height: 150px;
+  font-size: 70px;
   color: whitesmoke;
   text-align: end;
+  margin-top: 30px;
+}
+@media screen and (min-width: 480px) {
+  .zero {
+    height: 170px;
+    font-size: 85px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .zero {
+    height: 150px;
+    font-size: 60px;
+  }
 }
 
 .grid * {
-  background-color: rgb(23, 21, 21);
+  background-color: rgb(28, 26, 26);
   display: grid;
-  border: 1px solid grey;
+  grid-template: 2px;
   justify-content: center;
   color: white;
   text-align: center;
@@ -25,8 +43,19 @@
 
 .grid {
   display: grid;
-  grid-template-columns: minmax(100px, 500px) minmax(100px, 500px) minmax(100px, 500px) minmax(100px, 500px) minmax(100px, 500px);
+  grid-template-columns: repeat(5, minmax(60px, 500px));
   grid-template-rows: repeat(7, 50px);
+  gap: 4px;
+}
+@media screen and (min-width: 480px) {
+  .grid {
+    grid-template-rows: repeat(7, 100px);
+  }
+}
+@media screen and (min-width: 992px) {
+  .grid {
+    grid-template-rows: repeat(7, 40px);
+  }
 }
 
 .grid-p {
@@ -42,7 +71,6 @@
 .grid-mc {
   display: flex;
   gap: 40px;
-  justify-content: space-between;
   color: white;
   height: 50px;
   padding-left: 20px;
@@ -53,6 +81,28 @@
 
 .mc-color {
   color: gray;
+}
+
+.m-color {
+  color: gray;
+}
+.m-color::after {
+  content: "";
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 6px solid gray;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+@media screen and (min-width: 480px) {
+  .m-color {
+    display: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  .m-color {
+    display: none;
+  }
 }
 
 .grid-function {
@@ -81,10 +131,32 @@
   margin-right: 10px;
 }
 
+.Trigonometry-p::after {
+  content: "";
+  border: solid whitesmoke;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin-left: 10px;
+}
+
 .Function-p::before {
   content: "ƒ";
   margin-right: 10px;
   font-size: 30px;
+}
+
+.Function-p::after {
+  content: "";
+  border: solid whitesmoke;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin-left: 10px;
 }
 
 .bgg {
